@@ -4,12 +4,12 @@ public class Tabuleiro {
 	
 	private int linhas;
 	private int colunas;
-	private pecas[][] pecas;
+	private Peca[][] pecas;
 	
 	public Tabuleiro(int linhas, int colunas) {
 		this.linhas = linhas;
 		this.colunas = colunas;
-		pecas = new Pecas [linhas][colunas];
+		pecas = new Peca [linhas][colunas];
 	}
 
 	public int getLinhas() {
@@ -27,5 +27,12 @@ public class Tabuleiro {
 	public void setColunas(int colunas) {
 		this.colunas = colunas;
 	}
-
+	
+	public Peca peca(int linha, int coluna) {
+		return pecas [linha][coluna];
+	}
+	
+	public Peca peca(Posicao posicao) {
+		return pecas [posicao.getLinha()][posicao.getColuna()];
+	}
 }
