@@ -1,9 +1,9 @@
 package xadrex;
 
+import pecasXadrez.Rei;
+import pecasXadrez.Torre;
 import tabuleiroJogo.Posicao;
 import tabuleiroJogo.Tabuleiro;
-import xadrex.pecas.Rei;
-import xadrex.pecas.Torre;
 
 public class PartidaXadrez {
 	
